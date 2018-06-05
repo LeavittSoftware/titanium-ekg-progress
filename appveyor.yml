@@ -41,6 +41,8 @@ notifications:
   
 skip_tags: true
 version: 1.2.{build}
+pull_requests:
+  do_not_increment_build_number: true
 deploy:
 - provider: GitHub
   auth_token:
