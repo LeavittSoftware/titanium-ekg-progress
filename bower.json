@@ -3,8 +3,9 @@
   "version": "1.1.0",
   "description": "A polymer 2 loader with EKG animation",
   "authors": [
-    "Leavitt Software"
+    "Leavitt Software Solutions"
   ],
+  "license": "MIT",
   "keywords": [
     "polymer",
     "ekg",
@@ -13,10 +14,9 @@
   "main": "titanium-ekg-progress.html",
   "repository": {
     "type": "git",
-    "url": "git://github.com/AwsomeWyatt/titanium-ekg-progress.git"
+    "url": "git://github.com/LeavittSoftware/titanium-ekg-progress.git"
   },
-  "license": "https://opensource.org/licenses/MIT",
-  "homepage": "https://github.com/AwsomeWyatt/titanium-ekg-progress",
+  "homepage": "https://github.com/LeavittSoftware/titanium-ekg-progress",
   "ignore": [
     "node_modules",
     "bower_components",
