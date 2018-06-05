@@ -22,4 +22,4 @@
     <titanium-ekg-progress disabled></titanium-ekg-progress>
 ```
 
-A EKG indeterminate styled progress loader.
+A EKG styled indeterminate progress loader.
