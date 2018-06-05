@@ -1,0 +1,32 @@
+<link rel="import" href="../ekg-progress.html">
+
+
+<dom-module id="ekg-progress-demo">
+  <template>
+    <style>
+      ekg-progress[first] {
+        --ekg-stroke-color: red;
+        --ekg-stroke-width: 1;
+      }
+
+      ekg-progress[small] {
+        height: 25px;
+        width: 100px;
+        --ekg-stroke-width: 3;
+        background-color: #e2e2e2;
+
+      }
+    </style>
+    <ekg-progress first></ekg-progress>
+    <ekg-progress small></ekg-progress>
+    <ekg-progress disabled></ekg-progress>
+
+  </template>
+  <script>
+    class EkgProgressDemo extends Polymer.Element {
+      static get is() {
+        return 'ekg-progress-demo';
+      }
+    }
+    window.customElements.define(EkgProgressDemo.is, EkgProgressDemo);
+  </script>

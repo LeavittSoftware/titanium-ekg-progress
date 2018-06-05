@@ -1,0 +1,24 @@
+{
+  "name": "ekg-progress",
+  "version": "1.0.1",
+  "description": "",
+  "main": "ekg-progress.html",
+  "dependencies": {},
+  "devDependencies": {
+    "@polymer/gen-typescript-declarations": "^1.2.0",
+    "bower": "*"
+  },
+  "scripts": {
+    "update-types": "gen-typescript-declarations --deleteExisting --outDir ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AwsomeWyatt/ekg-Progress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AwsomeWyatt/ekg-Progress/issues"
+  },
+  "homepage": "https://github.com/AwsomeWyatt/ekg-Progress#readme"
+}

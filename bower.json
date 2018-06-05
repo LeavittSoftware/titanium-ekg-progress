@@ -1,0 +1,41 @@
+{
+  "name": "ekg-progress",
+  "version": "1.1.0",
+  "description": "A polymer 2 loader with ekg animation",
+  "authors": [
+    "AwsomeWyatt"
+  ],
+  "keywords": [
+    "polymer",
+    "ekg",
+    "loader"
+  ],
+  "main": "ekg-progress.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AwsomeWyatt/ekg-progress.git"
+  },
+  "license": "https://opensource.org/licenses/MIT",
+  "homepage": "https://github.com/AwsomeWyatt/ekg-progress",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "tsconfig.json",
+    ".gitignore",
+    ".vscode"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.4.0",
+    "polymer-decorators": "Polymer/polymer-decorators#^2.0.0"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "app-layout": "PolymerElements/app-layout#^2.0.0"
+  },
+  "demos": {
+    "Demo": "demo/index.html"
+  }
+}

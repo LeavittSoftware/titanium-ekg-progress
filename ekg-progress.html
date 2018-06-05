@@ -1,0 +1,108 @@
+﻿<link rel="import" href="./bower_components/polymer/polymer.html">
+
+<!--
+EKG Progress Indicator
+
+A EKG indeterminate styled progress loader.
+
+Example:
+
+   <ekg-progress></ekg-progress>
+
+### Styling progress indicator:
+
+The following mixins are available for styling:
+
+Custom property                                  | Description                                 | Default
+-------------------------------------------------|---------------------------------------------|--------------
+`--ekg-stroke-color`                             | Color of the ekg line                       | `blue`
+`--ekg-stroke-width`                             | Width of the EKG line                       | `2`
+`--ekg-stroke-ekg`                               | Mixin for full control of the EKP line      | `{}`
+
+@element ekg-progress
+@demo demo/index.html
+-->
+
+<dom-module id="ekg-progress">
+    <template>
+        <style>
+            :host {
+                display: block;
+                overflow: hidden;
+            }
+
+            :host(:not([disabled])) subline-inc {
+                animation: increase 2s infinite;
+                -webkit-animation: increase 2s infinite;
+            }
+
+            :host(:not([disabled])) subline-dec {
+                animation: decrease 2s 0.5s infinite;
+                -webkit-animation: decrease 2s 0.5s infinite;
+            }
+
+            @keyframes dash {
+                to {
+                    stroke-dashoffset: -1200;
+                }
+            }
+
+            @keyframes fade {
+                0% {
+                    opacity: 1
+                }
+                20% {
+                    opacity: 0
+                }
+            }
+
+            svg {
+                height: 100%;
+                width: 100%;
+            }
+
+            .ekg {
+                opacity: 1;
+                stroke-dasharray: 600;
+                stroke-dashoffset: 1200;
+                animation: dash 5.5s linear forwards infinite, fade 5.5s linear infinite;
+                stroke: var(--ekg-stroke-color, blue);
+                stroke-width: var(--ekg-stroke-width, 2);
+                fill: none;
+                stroke-linecap: square;
+                stroke-miterlimit: 10;
+                @apply --ekg-stroke-ekg;
+            }
+
+            :host([disabled]) .ekg {
+                animation: none;
+                display: none;
+            }
+        </style>
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="-466.4 259.6 280.2 47.3" enable-background="new -466.4 259.6 280.2 47.3" xml:space="preserve">
+            <polyline class="ekg" points="-465.4,281 -436,281 -435.3,280.6 -431.5,275.2 -426.9,281 -418.9,281 -423.9,281 -363.2,281 -355.2,269 -345.2,303 -335.2,263 -325.2,291 
+	-319.2,281 -187.2,281 " />
+        </svg>
+    </template>
+
+    <script>
+        class EkgProgress extends Polymer.Element {
+            static get is() {
+                return 'ekg-progress';
+            }
+            static get properties() {
+                return {
+                    disabled: {
+                        type: Boolean,
+                        value: false,
+                        reflectToAttribute: true
+                    }
+                }
+            }
+        }
+
+        // Associate the new class with an element name
+        customElements.define(EkgProgress.is, EkgProgress);
+    </script>
+</dom-module>
