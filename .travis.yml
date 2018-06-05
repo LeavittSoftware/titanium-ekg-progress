@@ -15,3 +15,8 @@ addons:
 script:
   - npm run lint
 dist: trusty
+notifications:
+  slack:
+    rooms:
+      - secure: "L2Us1gapK+yQNNy7OMwUPCaFu/x06hr27t+ygwx1K08IlPGrh4WxVCNvo4w/tBKtSb2GLWW0rLc5leQOp/u16NuCv9sgZgyrKrxkyw8O3aMFnFXxLFh+YLhTZRANfLK5S+DLFhRaAcLrfOgdo52OnI+/SAujM7upEjulU32evM1nQmXtDXXJ07uCg3mH956XYSgfm0D3W2/Bievno/t2AgK+mrm2Ij7faXbRKLqEHnFPKLKkBnde9C2SO9QO1vH2QWUVI/JmcYtKe+p+a2jy7ZTAUME9e1hyjqLoNf2niwfoEd4HVCaw7dW31Fwdls5LD3C8p0KQ3tj9oaGaZ6YJuUCWt8r2knmCga4MkbkLV2e/d7OWgbFqZV1/YFg91+Q5BEQpC1JJqBV38kKiTQFUsjFOtkY4wfhXDgs0DwYO19Nmuke9YJ7/nGwdeoivBKyMjtFjBwyZqpjSuvEqDlDjC50OvWuviooyznTfo6O1ymNz7ZjOW/PeU29eBh4OVQxJum3RSZmu3oCvVCvp6jYanVtKf1Emk10viCok7Oz9nIQ30FAO79uP18dSmIcjnNAXdRGl6xFQnF8PeoKqR3gB666blzP/OsjA6KP7sgCLNCx/Td2vdlUAfwucZGyR2OGG5XqcFG8VY0DTXJU7BIqucPYinHo0N+CoB0pMrEGFnP8="
+    on_success: always
