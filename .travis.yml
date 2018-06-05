@@ -1,22 +1,20 @@
 language: node_js
 sudo: required
 before_script:
-  - npm install -g polymer-cli
-  - bower install
+- npm install -g polymer-cli
+- bower install
 node_js: stable
 addons:
   firefox: latest
   apt:
     sources:
-      - google-chrome
+    - google-chrome
     packages:
-      - google-chrome-stable
+    - google-chrome-stable
   sauce_connect: true
 script:
-  - npm run lint
+- npm run lint
 dist: trusty
 notifications:
   slack:
-    rooms:
-      - secure: "N6pNTX2oGfxmNzK/0yjyMeowCPmyITTX75j29lw3H920fGWQXCmPJStQmL5vrN04KeZwdbNMpCMaS/n8A1fF3zG3wDk0G11zJ5M6fuwN5LqzEMpyYjcC7jr7WLcMWpeskwDDZ/WdHCbxWvLX7h3LVvqVuAD0YHk0blKQB0YQeq8vDUTRCF9+BMij+jYGdCqJDXKSjF4OAynGdzzvlgsF0oFYs9BNcramNXH2p2SBdhSTTGJeQnzuIt0qOfVdP+GbYu8472FvcBCfKnhpeKQG9Jye6Lm3JW1kzTxUeQER4DGW4JOPTqs6ouTUylzaO6HBN6Q+ea+zNNxw2W/DH5dOAC0NkPt8W2fLm8RWzTnJ/UFw/JHU8+/LxpPRhz6C6Ycp6NaYeYI5Yp346p6L/BbeGdz0GHd3qnI7FYxC5ebIlCmDy+V1gYhustUq8yfgGc8DrlcfORJ0NeYUYP4s4Z8oEkzKnO6n4R7dIXgqemvA1UgzPrFY/DnJ4+u8wqbNgsDsho4lhiwgOLlorxnZbd/jhoV/gZLT3tgXBKvu3C9n1MHV51DbD72ll52HCey72TQEjQmqNh7fvdwxLLQHk18LXjFPVsg0MCp2BrDTgQvj/WzOvOXCMV0rsvfmQN6e76K3TEudqkazsDTtKa3traLNrBlRkkVJnCy9TFuM4AnKkBc="
-    on_success: always
+    secure: kAMMreEfWwUbjpE8GIDMk8kc8/2konbFkmPHhjTc64eMOtMKJ+T977HiGgg7LXznOQAnuBVpW8daWp4zi1NcyNNnhKwc0vpw7NapCIYm4JboIikqJsclLBU7iDPxU7HpEagTMzOOShaz42YLxi16MhR77EXYUOs0Rsja9BXXhLYbouD+/vtyE74f+NiLJ+qM/CqxhhPxgmYLqJGRW43mg6BKBy3qJ971El2pcFTRd/4wXKr1kfPyefwKF2yEFvYhhD22SGRh7jyss5Tr4LcYsc68wHIp89C+naLc1hdQbAFwLsTnI/Rvh/3IdPIcr5qrL51f3nhb3TgtEKAvUQ+nNK+HjfDWmYTdC7yZH7drQHSagStCHcUUFBqd/Of4SkSCOsMjh6rWYde12Z7h8MvmEN9OhhFTsfbiooRtK2DYz0rqUdA0Qd1vJh2H06x8BFsIyRbs7bbaDsY36Aml/GoV7SWm/MaIOwu+ZHX8tKGXfKBZG+mQ9z0buEXnR7D9qTTFollT234lIpJd1PraGz5WmiuvIgWZlzktm49Bv9r3lj/I7wKiO34EEp1au2C8XIU8WpS+DvKtYh7zN43JrYn2/tyWT4I6lrY0ZlrU6S72IXk3Vcvd/Qs+0TyrIyt7ut6o0Lv05L4g9UP9nXk/liv9YF6KJnsxTcxW4+F3BPZT3GI=
