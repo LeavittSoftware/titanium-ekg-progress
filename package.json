@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AwsomeWyatt/ekg-Progress.git"
+    "url": "git+https://github.com/LeavittSoftware/titanium-ekg-progress.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AwsomeWyatt/ekg-Progress/issues"
+    "url": "https://github.com/LeavittSoftware/titanium-ekg-progress/issues"
   },
-  "homepage": "https://github.com/AwsomeWyatt/ekg-Progress#readme"
+  "homepage": "https://github.com/LeavittSoftware/titanium-ekg-progress#readme"
 }
