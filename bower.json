@@ -1,6 +1,6 @@
 {
   "name": "titanium-ekg-progress",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A polymer 2 loader with EKG animation",
   "authors": [
     "Leavitt Software Solutions"
@@ -26,8 +26,7 @@
     ".vscode"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.4.0",
-    "polymer-decorators": "Polymer/polymer-decorators#^2.0.0"
+    "polymer": "Polymer/polymer#^2.4.0"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
