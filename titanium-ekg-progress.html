@@ -7,7 +7,7 @@ A EKG indeterminate styled progress loader.
 
 Example:
 
-   <ekg-progress></ekg-progress>
+   <titanium-ekg-progress></titanium-ekg-progress>
 
 ### Styling progress indicator:
 
@@ -19,11 +19,11 @@ Custom property                                  | Description                  
 `--ekg-stroke-width`                             | Width of the EKG line                       | `2`
 `--ekg-stroke-ekg`                               | Mixin for full control of the EKP line      | `{}`
 
-@element ekg-progress
+@element titanium-ekg-progress
 @demo demo/index.html
 -->
 
-<dom-module id="ekg-progress">
+<dom-module id="titanium-ekg-progress">
     <template>
         <style>
             :host {
@@ -87,9 +87,9 @@ Custom property                                  | Description                  
     </template>
 
     <script>
-        class EkgProgress extends Polymer.Element {
+        class TitaniumEkgProgress extends Polymer.Element {
             static get is() {
-                return 'ekg-progress';
+                return 'titanium-ekg-progress';
             }
             static get properties() {
                 return {
@@ -103,6 +103,6 @@ Custom property                                  | Description                  
         }
 
         // Associate the new class with an element name
-        customElements.define(EkgProgress.is, EkgProgress);
+        customElements.define(TitaniumEkgProgress.is, TitaniumEkgProgress);
     </script>
 </dom-module>

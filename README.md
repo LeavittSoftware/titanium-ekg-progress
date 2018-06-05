@@ -1,13 +1,13 @@
-## &lt;ekg-progress&gt;
+## &lt;titanium-ekg-progress&gt;
 
 <!---
 ```
 <custom-element-demo>
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="ekg-progress.html">
+    <link rel="import" href="titanium-ekg-progress.html">
     <style is="custom-style">
-       ekg-progress {
+       titanium-ekg-progress {
         --ekg-stroke-color: red;
         --ekg-stroke-width: 1;
       }
@@ -18,8 +18,8 @@
 ```
 -->
 ```html
-    <ekg-progress></ekg-progress>
-    <ekg-progress disabled></ekg-progress>
+    <titanium-ekg-progress></titanium-ekg-progress>
+    <titanium-ekg-progress disabled></titanium-ekg-progress>
 ```
 
 A EKG indeterminate styled progress loader.

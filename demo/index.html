@@ -8,22 +8,36 @@
     <title>EKG Progress Demo</title>
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../bower_components/iron-demo-helpers.demo-pages-shared-styles.html">
+    <link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../titanium-ekg-progress.html">
 
     <custom-style>
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+        <style is="custom-style" include="demo-pages-shared-styles">
+            titanium-ekg-progress[red] {
+                --ekg-stroke-color: red;
+                --ekg-stroke-width: 1;
+            }
+
+            titanium-ekg-progress[small] {
+                height: 25px;
+                width: 100px;
+                --ekg-stroke-width: 3;
+                background-color: #e2e2e2;
+
+            }
         </style>
     </custom-style>
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+</head>
 
 <body>
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <div class="vertical-section-container centered">
         <h3>EKG Progress Demo</h3>
         <demo-snippet>
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-                <ekg-progress-demo></ekg-progress-demo>
+            <template>
+                <titanium-ekg-progress red></titanium-ekg-progress>
+                <titanium-ekg-progress small></titanium-ekg-progress>
+                <titanium-ekg-progress disabled></titanium-ekg-progress>
             </template>
         </demo-snippet>
     </div>

@@ -1,8 +1,8 @@
 {
-  "name": "ekg-progress",
+  "name": "titanium-ekg-progress",
   "version": "1.0.1",
   "description": "",
-  "main": "ekg-progress.html",
+  "main": "titanium-ekg-progress.html",
   "dependencies": {},
   "devDependencies": {
     "@polymer/gen-typescript-declarations": "^1.2.0",
