@@ -1,0 +1,20 @@
+language: node_js
+sudo: required
+before_script:
+- npm install -g polymer-cli
+- bower install
+node_js: stable
+addons:
+  firefox: latest
+  apt:
+    sources:
+    - google-chrome
+    packages:
+    - google-chrome-stable
+  sauce_connect: true
+script:
+- npm run lint
+dist: trusty
+notifications:
+  slack:
+    secure: kAMMreEfWwUbjpE8GIDMk8kc8/2konbFkmPHhjTc64eMOtMKJ+T977HiGgg7LXznOQAnuBVpW8daWp4zi1NcyNNnhKwc0vpw7NapCIYm4JboIikqJsclLBU7iDPxU7HpEagTMzOOShaz42YLxi16MhR77EXYUOs0Rsja9BXXhLYbouD+/vtyE74f+NiLJ+qM/CqxhhPxgmYLqJGRW43mg6BKBy3qJ971El2pcFTRd/4wXKr1kfPyefwKF2yEFvYhhD22SGRh7jyss5Tr4LcYsc68wHIp89C+naLc1hdQbAFwLsTnI/Rvh/3IdPIcr5qrL51f3nhb3TgtEKAvUQ+nNK+HjfDWmYTdC7yZH7drQHSagStCHcUUFBqd/Of4SkSCOsMjh6rWYde12Z7h8MvmEN9OhhFTsfbiooRtK2DYz0rqUdA0Qd1vJh2H06x8BFsIyRbs7bbaDsY36Aml/GoV7SWm/MaIOwu+ZHX8tKGXfKBZG+mQ9z0buEXnR7D9qTTFollT234lIpJd1PraGz5WmiuvIgWZlzktm49Bv9r3lj/I7wKiO34EEp1au2C8XIU8WpS+DvKtYh7zN43JrYn2/tyWT4I6lrY0ZlrU6S72IXk3Vcvd/Qs+0TyrIyt7ut6o0Lv05L4g9UP9nXk/liv9YF6KJnsxTcxW4+F3BPZT3GI=

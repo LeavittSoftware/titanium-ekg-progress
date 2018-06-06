@@ -5,11 +5,10 @@
   "main": "titanium-ekg-progress.html",
   "dependencies": {},
   "devDependencies": {
-    "@polymer/gen-typescript-declarations": "^1.2.0",
     "bower": "*"
   },
   "scripts": {
-    "update-types": "gen-typescript-declarations --deleteExisting --outDir ."
+    "lint": "polymer lint --rules=polymer-2"
   },
   "repository": {
     "type": "git",

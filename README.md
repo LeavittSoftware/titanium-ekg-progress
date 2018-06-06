@@ -1,5 +1,9 @@
 ## &lt;titanium-ekg-progress&gt;
 
+[![Build status](https://ci.appveyor.com/api/projects/status/isx2v58afhqxi24f/branch/master?svg=true)](https://ci.appveyor.com/project/aarondrabeck/titanium-ekg-progress/branch/master)
+
+[![Build Status](https://travis-ci.org/LeavittSoftware/titanium-ekg-progress.svg?branch=master)](https://travis-ci.org/LeavittSoftware/titanium-ekg-progress)
+
 <!---
 ```
 <custom-element-demo>
@@ -23,3 +27,5 @@
 ```
 
 A EKG styled indeterminate progress loader.
+
+`bower install --save titanium-ekg-progress`
